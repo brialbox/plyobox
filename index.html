@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRIALBOX | Equipamiento Pliométrico Soft</title>
+    <link rel="icon" href="flavicon.ico" type="image/x-icon">
+    <style>
+        /* RESET & BASE */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        body { background-color: #0f0f10; color: #f1f1f1; line-height: 1.6; }
+        a { text-decoration: none; color: inherit; }
+        img { max-width: 100%; height: auto; display: block; }
+
+        /* HEADER */
+        header { display: flex; justify-content: space-between; align-items: center; padding: 15px 5%; background: #161618; border-bottom: 1px solid #28282b; position: sticky; top: 0; z-index: 1000; }
+        .logo img { height: 55px; width: auto; object-fit: contain; }
+        nav a { margin-left: 20px; font-size: 0.95rem; font-weight: 500; color: #aaa; transition: 0.3s; }
+        nav a:hover { color: #fff; }
+        .btn-header { background: #84cc16; color: #000; padding: 8px 18px; border-radius: 4px; font-weight: 700; }
+
+        /* HERO SECTION */
+        .hero { display: flex; flex-direction: column; align-items: center; text-align: center; padding: 60px 5% 40px; background: radial-gradient(circle at center, #1f2023 0%, #0f0f10 100%); }
+        .hero h1 { font-size: 2.8rem; font-weight: 900; margin-bottom: 15px; text-transform: uppercase; letter-spacing: 1px; }
+        .hero p { max-width: 700px; color: #aaa; font-size: 1.1rem; margin-bottom: 30px; }
+        .hero-img { border-radius: 8px; box-shadow: 0 10px 30px rgba(0,0,0,0.8); margin-bottom: 30px; border: 1px solid #28282b; }
+
+        /* BUTTONS */
+        .btn-main { background: #84cc16; color: #000; padding: 14px 28px; font-size: 1rem; font-weight: 800; border-radius: 4px; display: inline-block; text-transform: uppercase; letter-spacing: 1px; transition: 0.3s; }
+        .btn-main:hover { background: #a3e635; transform: translateY(-2px); }
+
+        /* FEATURES SECTION */
+        .features { padding: 80px 5%; background: #141416; text-align: center; }
+        .section-title { font-size: 2rem; font-weight: 800; margin-bottom: 40px; text-transform: uppercase; letter-spacing: 1px; }
+        .grid-features { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 30px; }
+        .card-feature { background: #1c1d21; padding: 30px; border-radius: 8px; border: 1px solid #2a2b30; text-align: left; }
+        .card-feature h3 { font-size: 1.2rem; margin-bottom: 10px; color: #fff; display: flex; align-items: center; gap: 10px; }
+        .bullet { color: #84cc16; font-size: 1.4rem; line-height: 1; }
+        .card-feature p { color: #888; font-size: 0.95rem; }
+
+        /* CATALOG TABLE SECTION */
+        .catalog { padding: 80px 5%; max-width: 1000px; margin: 0 auto; }
+        .table-container { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; background: #1c1d21; border-radius: 8px; overflow: hidden; border: 1px solid #2a2b30; }
+        th, td { padding: 18px 20px; text-align: left; }
+        th { background: #25262c; color: #84cc16; text-transform: uppercase; font-size: 0.85rem; letter-spacing: 1px; }
+        tr { border-bottom: 1px solid #2a2b30; }
+        tr:last-child { border-bottom: none; }
+        td strong { color: #fff; font-size: 1.05rem; }
+
+        /* CUSTOMIZATION SECTION */
+        .custom { padding: 80px 5%; background: #141416; display: flex; flex-wrap: wrap; align-items: center; gap: 40px; justify-content: center; }
+        .custom-text { flex: 1; min-width: 300px; max-width: 500px; }
+        .custom-text h2 { font-size: 2rem; font-weight: 800; margin-bottom: 15px; }
+        .custom-text p { color: #aaa; margin-bottom: 20px; }
+        .custom-img { flex: 1; min-width: 300px; max-width: 450px; border-radius: 8px; border: 1px solid #2a2b30; }
+
+        /* FOOTER / CTA */
+        footer { padding: 60px 5%; text-align: center; background: #0a0a0b; border-top: 1px solid #1c1d21; }
+        footer h2 { margin-bottom: 15px; }
+        footer p { color: #777; margin-bottom: 15px; }
+        .footer-email { color: #84cc16; font-weight: 600; font-size: 1.05rem; display: block; margin-bottom: 25px; transition: 0.3s; }
+        .footer-email:hover { color: #a3e635; text-decoration: underline; }
+
+        /* RESPONSIVE MOBILE */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+            .logo img { height: 40px; }
+            nav { display: none; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="logo">
+            <img src="Brialbox_logo_transp.png" alt="BRIALBOX Equipamiento Pliométrico">
+        </div>
+        <nav>
+            <a href="#caracteristicas">Características</a>
+            <a href="#modelos">Modelos</a>
+            <a href="#personalizacion">Personalización</a>
+        </nav>
+        <a href="https://wa.me/5491131502066" target="_blank" class="btn-header">Contactanos</a>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+        <h1>Cajones Pliométricos Soft 3 en 1</h1>
+        <p>
+            Núcleo de madera reinforced recubierto con goma de alta densidad.<br>
+            Rendimiento profesional, máxima estabilidad y protección total contra impactos.
+        </p>
+        
+        <img src="linea.jpg" alt="Línea de Plyobox Brialbox" class="hero-img">
+        
+        <a href="#modelos" class="btn-main">Ver Medidas y Tamaños</a>
+    </section>
+
+    <!-- CARACTERÍSTICAS -->
+    <section class="features" id="caracteristicas">
+        <h2 class="section-title">Construidos para el Máximo Rendimiento</h2>
+        <div class="grid-features">
+            <div class="card-feature">
+                <h3><span class="bullet">•</span> Núcleo Reforzado</h3>
+                <p>Estructura interior sólida de madera que garantiza durabilidad, rigidez y soporte para entrenamientos intensos de alto tráfico.</p>
+            </div>
+            <div class="card-feature">
+                <h3><span class="bullet">•</span> Revestimiento Soft</h3>
+                <p>Capa de goma de alta densidad que amortigua golpes en canillas y articulaciones, para que saltes con total confianza.</p>
+            </div>
+            <div class="card-feature">
+                <h3><span class="bullet">•</span> Formato 3 en 1</h3>
+                <p>Tres alturas distintas en una sola pieza. Solo tenés que girar el cajón para adaptar la exigencia a tu rutina.</p>
+            </div>
+            <div class="card-feature">
+                <h3><span class="bullet">•</span> Branding a Medida</h3>
+                <p>Personaliza las caras del cajón con la identidad de tu Box, Gimnasio o Marca personal con terminación profesional.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CATALOGO -->
+    <section class="catalog" id="modelos">
+        <h2 class="section-title" style="text-align: center;">Modelos Disponibles</h2>
+        <div class="table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Modelo</th>
+                        <th>Medidas (cm)</th>
+                        <th>Progresión / Uso Recomendado</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Básico</strong></td>
+                        <td>20 x 30 x 40 cm</td>
+                        <td>Iniciación, niños, rehabilitación y ejercicios de bajo impacto.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Intermedio</strong></td>
+                        <td>30 x 40 x 50 cm</td>
+                        <td>Nivel medio, gimnasios convencionales o espacios reducidos.</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Avanzado</strong></td>
+                        <td>50 x 60 x 75 cm</td>
+                        <td>Estándar oficial de CrossFit, competencia y alto rendimiento.</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <!-- PERSONALIZACIÓN -->
+    <section class="custom" id="personalizacion">
+        <div class="custom-text">
+            <h2>Tu Logo en Tu Equipamiento</h2>
+            <p>Agregamos tu marca o logo a pedido en un lateral del cajón con impresión de alta precisión y durabilidad.</p>
+            <a href="https://wa.me/5491131502066?text=Hola,%20quisiera%20cotizar%20Plyobox%20personalizados" class="btn-main" target="_blank">Consultar por Personalización</a>
+        </div>
+        <img src="logo.jpg" alt="Ejemplo de Personalización de Logo Brialbox" class="custom-img">
+    </section>
+
+    <!-- FOOTER / CTA -->
+    <footer>
+        <h2>¿Listo para equipar tu gimnasio?</h2>
+        <p>Escribinos directamente para presupuestos mayoristas o personalizados.</p>
+        <a href="mailto:brialbox.ar@gmail.com" class="footer-email">brialbox.ar@gmail.com</a>
+        <a href="https://wa.me/5491131502066" target="_blank" class="btn-main">Hablar por WhatsApp</a>
+        <p style="margin-top: 40px; font-size: 0.8rem; color: #444;">&copy; BRIALBOX - Equipamiento Pliométrico. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html>
