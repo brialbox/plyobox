@@ -65,14 +65,20 @@
         .footer-email { color: #84cc16; font-weight: 600; font-size: 1.05rem; display: block; margin-bottom: 25px; transition: 0.3s; }
         .footer-email:hover { color: #a3e635; text-decoration: underline; }
 
-        /* RESPONSIVE MOBILE */
-        @media (max-width: 992px) {
-            .hero h1 { font-size: 1.8rem; }
-            .logo img { height: 40px; }
-            nav { display: none; }
-            .features-container { flex-direction: column; }
-            .features-img { max-width: 100%; }
-        }
+		/* RESPONSIVE MOBILE */
+		@media (max-width: 992px) {
+			.hero h1 { font-size: 1.2rem; }
+			.logo img { height: 40px; }
+			nav { display: none; }
+			.features-container { flex-direction: column; }
+			.features-img { max-width: 100%; }
+
+			/* TÍTULOS EN MÓVILES */
+			.section-title, 
+			.custom-text h2 { 
+				font-size: 1rem; /* Cambiá este valor al tamaño que quieras */
+			}
+		}
     </style>
 </head>
 <body>
