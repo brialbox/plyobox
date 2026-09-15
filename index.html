@@ -67,7 +67,7 @@
 
         /* RESPONSIVE MOBILE */
         @media (max-width: 992px) {
-            .hero h1 { font-size: 1rem; }
+            .hero h1 { font-size: 2rem; }
             .logo img { height: 40px; }
             nav { display: none; }
             .features-container { flex-direction: column; }
@@ -98,7 +98,10 @@
             Rendimiento profesional, máxima estabilidad y protección total contra impactos.
         </p>
         
-        <img src="linea.jpg" alt="Línea de Plyobox Brialbox" class="hero-img">
+        <picture>
+            <source media="(max-width: 992px)" srcset="linea_moviles.jpg">
+            <img src="linea.jpg" alt="Línea de Plyobox Brialbox" class="hero-img">
+        </picture>
         
         <a href="#modelos" class="btn-main">Ver Medidas y Tamaños</a>
     </section>
